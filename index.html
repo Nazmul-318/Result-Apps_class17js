@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Student Marks seet</title>
+	<!-- ALL CSS FILES  -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+     <div class="container my-5">
+		 <div class="row">
+			 <div class="col-md-3">
+				<div class="card">
+					<div lass="card-header">
+						<div class="card-body">
+							<h2 class="bg-success">Student Marks Seet</h2>
+						<form action="" id="student_form">
+							<div class="form-group mb-3 border-3">								
+								<input class="form-control alert-info border-3" type="text" placeholder="Student Name">								
+							</div>
+							<div class="form-group mb-3">								
+								<input class="form-control alert-info border-3" type="text" placeholder="Roll Number">								
+							</div>
+							<div class="form-group mb-3">								
+								<input class="form-control alert-info border-3" type="text" placeholder="Class">								
+							</div>
+							<div class="form-group mb-3">								
+								<input class="form-control alert-info border-3" type="text" placeholder="Photo">								
+							</div>
+							<div class="form-group mb-3 m-1">								
+								<input class=" m-2 " name="gender" type="radio" value="Male" id="male"><label for="male"> Male</label>	<br>						
+								<input class=" m-2" name="gender" type="radio" value="Female" id="female"><label for="female"> Female</label>	<br>				
+								<input class=" m-2" name="gender" type="radio" value="Others" id="others"><label for="others"> Others</label>					
+							</div>
+							<h5 class="alert-success">Marks</h5>
+								<hr>
+							<div class="form-group mb-3">								
+								<input class="form-control alert-info border-3" type="text" placeholder="Bangla">								
+							</div>
+							<div class="form-group mb-3">								
+								<input class="form-control alert-info border-3" type="text" placeholder="English">								
+							</div>
+							<div class="form-group mb-3">								
+								<input class="form-control alert-info border-3" type="text" placeholder="Math">								
+							</div>
+							<div class="form-group mb-3">								
+								<input class="form-control alert-info border-3" type="text" placeholder="Science">								
+							</div>
+							<div class="form-group mb-3">								
+								<input class="form-control alert-info border-3" type="text" placeholder="Social Science">								
+							</div>
+							<div class="form-group mb-3">								
+								<input class="form-control alert-info border-3" type="text" placeholder="Religion">								
+							</div>							
+							<div class="form-group mb-3">								
+								<input class="btn btn-warning w-100" type="submit" value="Add New Student">								
+							</div>
+						</form>
+						</div>						
+					</div>
+				</div>
+			 </div>
+			 <div class="col-md-9">
+				 <div class="card">
+					 <div class="card-body">
+						<input id="search_box" class="alert-info border-3" type="text">
+						<button class="btn btn-sm btn-info w-25 alert-danger">Search</button>
+						<hr>
+						 <table class="table table-striped">
+							 <thead>
+								 <tr>
+									 <th>#</th>
+									 <th>Name</th>
+									 <th>Roll</th>
+									 <th>Class</th>
+									 <th>Gender</th>
+									 <th>Grade</th>									 
+									 <th>CGPA</th>									 
+									 <th>Photo</th>									 
+									 <th>Action</th>									 
+								 </tr>
+							 </thead>
+							 <tbody id="data_list">				
+								 
+							 </tbody>
+						 </table>
+					 </div>
+				 </div>
+			 </div>
+		 </div>
+	 </div>
+	 
+	<!-- Student Single Data Modfal  -->
+
+	<div class="modal fade" id="student_single_modal">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="modal-content">
+
+				<div class="modal-body">
+					<div class="student-result-data">
+						
+					</div>
+				</div>
+	
+			</div>
+		</div>
+	</div>
+	<!-- JS FILES  -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<script src="./Result.js"></script>
+	<script src="./functions.js"></script>
+	<script src="./app.js"></script>
+</body>
+</html>
